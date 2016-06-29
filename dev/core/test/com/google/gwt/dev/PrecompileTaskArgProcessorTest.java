@@ -41,7 +41,7 @@ public class PrecompileTaskArgProcessorTest extends TestCase {
         "-XdisableClassMetadata", "-XdisableClusterSimilarFunctions",
         "-XdisableInlineLiteralParameters", "-XdisableOptimizeDataflow", "-XdisableOrdinalizeEnums",
         "-XdisableRemoveDuplicateFunctions", "-XdisableRunAsync", "-XdisableSoycHtml",
-        "-XdisableUpdateCheck", "-ea", "-soyc", "-XsoycDetailed",
+        "-XdisableUpdateCheck", "-ea", "-XenableClosureCompiler", "-soyc", "-XsoycDetailed",
         "-XenableJsonSoyc", "-strict", "com.google.gwt.dev.DevModule");
 
     // Show that the flags were recognized and ended up modifying options.
@@ -62,6 +62,8 @@ public class PrecompileTaskArgProcessorTest extends TestCase {
     assertNotEquals(defaultOptions.isSoycHtmlDisabled(), handledOptions.isSoycHtmlDisabled());
     assertNotEquals(defaultOptions.isUpdateCheckDisabled(), handledOptions.isUpdateCheckDisabled());
     assertNotEquals(defaultOptions.isEnableAssertions(), handledOptions.isEnableAssertions());
+    assertNotEquals(
+        defaultOptions.isClosureCompilerEnabled(), handledOptions.isClosureCompilerEnabled());
     assertNotEquals(defaultOptions.isSoycEnabled(), handledOptions.isSoycEnabled());
     assertNotEquals(defaultOptions.isSoycExtra(), handledOptions.isSoycExtra());
     assertNotEquals(defaultOptions.isJsonSoycEnabled(), handledOptions.isJsonSoycEnabled());

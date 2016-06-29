@@ -135,6 +135,11 @@ public class PrecompileTaskOptionsImpl extends CompileTaskOptionsImpl
   }
 
   @Override
+  public boolean isClosureCompilerEnabled() {
+    return jjsOptions.isClosureCompilerEnabled();
+  }
+
+  @Override
   public boolean isCompilerMetricsEnabled() {
     return jjsOptions.isCompilerMetricsEnabled();
   }
@@ -206,6 +211,11 @@ public class PrecompileTaskOptionsImpl extends CompileTaskOptionsImpl
   @Override
   public void setClassMetadataDisabled(boolean disabled) {
     jjsOptions.setClassMetadataDisabled(disabled);
+  }
+
+  @Override
+  public void setClosureCompilerEnabled(boolean enabled) {
+    jjsOptions.setClosureCompilerEnabled(enabled);
   }
 
   @Override

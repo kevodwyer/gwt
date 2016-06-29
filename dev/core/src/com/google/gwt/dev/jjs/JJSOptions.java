@@ -21,6 +21,7 @@ import com.google.gwt.dev.util.arg.OptionClosureFormattedOutput;
 import com.google.gwt.dev.util.arg.OptionClusterSimilarFunctions;
 import com.google.gwt.dev.util.arg.OptionDisableClassMetadata;
 import com.google.gwt.dev.util.arg.OptionEnableAssertions;
+import com.google.gwt.dev.util.arg.OptionEnableClosureCompiler;
 import com.google.gwt.dev.util.arg.OptionFragmentCount;
 import com.google.gwt.dev.util.arg.OptionFragmentsMerge;
 import com.google.gwt.dev.util.arg.OptionGenerateJsInteropExports;
@@ -47,10 +48,13 @@ import com.google.gwt.dev.util.arg.OptionUseDetailedTypeIds;
  */
 public interface JJSOptions extends OptionOptimize,
     OptionClusterSimilarFunctions, OptionIncrementalCompile, OptionDisableClassMetadata,
-    OptionEnableAssertions, OptionInlineLiteralParameters, OptionOptimizeDataflow,
-    OptionRunAsyncEnabled, OptionScriptStyle, OptionSoycEnabled, OptionSoycDetailed,
-    OptionJsonSoycEnabled, OptionOrdinalizeEnums, OptionRemoveDuplicateFunctions, OptionStrict,
-    OptionSoycHtmlDisabled, OptionFragmentsMerge, OptionFragmentCount, OptionSourceLevel,
-    OptionNamespace, OptionCheckedMode, OptionGenerateJsInteropExports, OptionUseDetailedTypeIds,
-    OptionAllowJDTConstantInlining, OptionMethodNameDisplayMode, OptionClosureFormattedOutput {
+    OptionEnableAssertions, OptionInlineLiteralParameters,
+    OptionOptimizeDataflow, OptionRunAsyncEnabled, OptionScriptStyle, OptionSoycEnabled,
+    OptionSoycDetailed, OptionJsonSoycEnabled, OptionOrdinalizeEnums,
+    OptionRemoveDuplicateFunctions, OptionStrict,
+    OptionSoycHtmlDisabled, OptionEnableClosureCompiler,
+    OptionFragmentsMerge, OptionFragmentCount, OptionSourceLevel, OptionNamespace,
+    OptionCheckedMode, OptionGenerateJsInteropExports, OptionUseDetailedTypeIds,
+    OptionAllowJDTConstantInlining, OptionMethodNameDisplayMode,
+    OptionClosureFormattedOutput {
 }
